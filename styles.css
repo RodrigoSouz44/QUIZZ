@@ -1,0 +1,114 @@
+/* Corpo da página */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('https://plus.unsplash.com/premium_photo-1707819128876-2f6ca16d0c0f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); 
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container principal */
+.container {
+    width: 80%;
+    max-width: 900px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Barra de progresso */
+.progress-bar {
+    width: 100%;
+    background-color: #ccc;
+    height: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.progress {
+    width: 0;
+    height: 100%;
+    background-color: #f1c40f;
+    border-radius: 5px;
+}
+
+/* Título das perguntas */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* Texto da pergunta */
+#perguntaTexto {
+    font-size: 1.8em;
+    margin: 20px 0;
+    color: #fff;
+}
+
+/* Opções de resposta */
+.opcoes button {
+    font-size: 1.3em;
+    padding: 15px 25px;
+    background-color: #f1c40f;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+    width: 80%;
+}
+
+.opcoes button:hover {
+    background-color: #f39c12;
+}
+
+/* Feedback da resposta */
+span {
+    font-size: 2em;
+    opacity: 0;
+    transition: opacity 1s ease-in-out, transform 0.5s ease;
+    transform: translateY(20px);
+}
+
+span.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Botão de Reiniciar */
+button {
+    font-size: 1.3em;
+    padding: 15px 25px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+    width: 50%;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Estilo para o rodapé (Créditos) */
+footer {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 0.8em;
+    color: rgba(255, 255, 255, 0.6);
+    font-family: 'Poppins', sans-serif;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="progress-bar">
+            <div id="progress" class="progress"></div>
+        </div>
+        <h1 id="perguntaTitulo">Pergunta 1</h1>
+        <p id="perguntaTexto">Qual o lugar mais profundo dos oceanos?</p>
+        <div class="opcoes">
+            <button onclick="verificarResposta('A')">A) Fossa de Java</button>
+            <button onclick="verificarResposta('B')">B) Fossa das Ilhas Sandwich</button>
+            <button onclick="verificarResposta('C')">C) Fossa das Marianas</button>
+        </div>
+        <span id="resposta"></span>
+    </div>
+
+    <!-- Créditos -->
+    <footer>
+        <p>Desenvolvido por Rodrigo César de Souza</p>
+    </footer>
+</body>
+</html>
